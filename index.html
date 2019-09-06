@@ -1,0 +1,154 @@
+<!doctype html>
+<!-- We always start our HTML document with a doctype tag defining the type of our document in this case html-->
+<html>
+  <!-- html is the root element of our document, all the code should be contained in this tag -->
+  <head>
+    <!-- 
+      head tag is used as direct child of the html root element and is used to add any information regarding our document. 
+      This information is not displayed on our webpage
+    -->
+    <title>Week 1 - HTML Elements</title>
+    <!-- title tag is used to set a title of the page which is displayed as the information on the browser tab -->
+    <meta charset="utf-8">
+    <!-- meta tag is used to define additional information regarding our document, by using attribute and its value. in this case charset is the attribute and utf-8 is the value -->
+  </head>
+  <body>
+    <!-- 
+      body tag is the second and only other direct child of our html root element.
+      All the content of our webpage is contained in this tag
+     -->
+     <!-- h1-h6 are the heading tags, with h1 being most important heading of the page and h6 being least important -->
+    <h1>This is header 1. The most important information on the page.</h1>
+    <h2>This is header 2 element</h2>
+    <h3>This is header 3 element</h3>
+    <h6>This is the header 6 element, last level of heading tags.</h6>
+    <!-- a p tag defines a paragraph of text -->
+    <p>
+      Topping gummies caramels pudding tiramisu carrot cake halvah biscuit. Chocolate cake bonbon sugar plum chocolate bar sweet caramels biscuit. Marzipan macaroon lemon drops cotton candy. Sweet roll pastry chocolate.
+    </p>
+    <p>
+      Gummies muffin cupcake chocolate jujubes. Gummies liquorice cake oat cake muffin. Soufflé dessert croissant. Muffin candy apple pie carrot cake carrot cake tart chocolate.
+    </p>
+    <p>
+      Jelly-o muffin lemon drops sesame snaps cake chocolate bar cake cake. Lemon drops apple pie muffin gummies carrot cake marshmallow croissant jelly-o. Pastry dessert muffin pie tart sugar plum gingerbread gingerbread.
+    </p>
+    <p>
+      Lemon drops bear claw oat cake cupcake candy canes fruitcake bonbon soufflé soufflé. Sugar plum donut fruitcake cookie ice cream cheesecake tiramisu dessert dragée. Pudding croissant pudding.
+    </p>
+    <p>
+      <!-- q tag is an inline quote tag -->
+        <q>Sesame snaps cookie soufflé cake pie chocolate bar pie icing.</q> Chupa chups ice cream croissant lemon drops jelly cookie bear claw chupa chups halvah. Biscuit chupa chups dragée apple pie liquorice cake oat cake marzipan icing. Donut dessert muffin cake marzipan jelly-o cake icing.
+    </p>
+    <!-- 
+      a blockquote is used to add a stand alone block of quote.
+      We can add cite tag as a child of blockquote to provide the source of the information
+    -->
+    <blockquote>
+        Biscuit chupa chups dragée apple pie liquorice cake oat cake marzipan icing. Donut dessert muffin cake marzipan jelly-o cake icing.
+        <cite>Cupcake Ipsum</cite>
+    </blockquote>
+    <p>
+      <!-- strong tag is used to provide importance to the text -->
+      <strong>Boxes</strong> strong tag is used to define important text.<br>
+      <!-- 
+        br is a singular tag which adds a line break 
+        we can add multiple br tags to add multiple line breaks
+      -->
+      
+      <!-- em tag marks that the text has stress emphasis -->
+      <em>Emphasis Tag</em> used to give emphasis to text.<br>
+      
+      <!-- mark tag marks or highlights the contained text -->
+      <mark>Marked text</mark> is used to mark or highlight part of paragraph.<br>
+
+      <!-- del marks the text as deleted, it does not remove the text from the page, mainly used to show difference in versions or track changes -->
+      <del>Deleted text</del> this is to be removed.<br>
+
+      <!-- small tag sets the text font-size to the smallest size of the browser. This is mainly used for side notes or copyright information -->
+      <small>This is made smaller using html small tag</small>
+    </p>
+    <p>
+      <!-- sub is used for subscripting the text -->
+      H<sub>2</sub>O - Water
+      <!-- sup is used for superscripting the text -->
+      10<sup>th</sup> number
+      <!-- abbr is used for abbreviations or acronyms. The full written version of the abbreviation is provided using a title attribute -->
+      <abbr title="World Health Organization">WHO</abbr>
+      <!-- acronym is is removed from HTML5 -->
+      <acronym title="as soon as possible">ASAP</acronym>
+    </p>
+    <p>
+      Please click on the following link to read the article. 
+      <!-- 
+        anchor tag, a tag is used to create links.
+        a tag uses a required href attribute to define the location of the link
+        In this case we are linking to another file article.html in the same folder.
+        The link here is called a relative path as it is relative to the index.html file where we are adding the link.
+      -->
+      <a href="article.html">Read Article</a>
+      <!-- 
+        We can use a tag to link to websites. 
+        This link is called an absolute path as it a URL of a website 
+        -->
+      <a href="https://google.com" target="_blank">Google</a>
+      <hr>
+    </p>
+    <!-- Adding an HTML comment, this block of HTML will not be display to the users.
+        We can use the comments to leave notes in our code or comment any HTML code from our page -->
+    <!-- <h4>Heading Level 4</h4> -->
+
+    <!-- 
+        ul is an unordered list element 
+        ul can only have li tags as its direct children
+        li is a list item
+        By default the list items are displayed as bulleted lists
+    -->
+    <ul>
+        <li>Orange</li>
+        <!-- li tag contain any other HTML elements -->
+        <li><a href="http://apple.com" target="_blank">Apple</a></li>
+        <li><strong>Banana</strong></li>
+    </ul>
+    <!-- 
+        ol is used for ordered lists 
+        ol can also have only li tags as direct children
+        By default the list items are displayed as numbered list
+    -->
+    <ol>
+        <li>May 06 - AC day 1</li>
+        <li>May 07 - First day of class</li>
+    </ol>
+    <!--
+        dl is used for description list
+        it contains terms (dt tags) and descriptions (dd tags)
+        It can be used as follow: 
+            multiple terms, single description
+            single term, multiple descriptions
+            term description pairs
+    -->
+    <dl>
+        <dt>Name</dt>
+        <dd>Abhay</dd>
+        <dt>Address</dt>
+        <dd>Earth</dd>
+    </dl>
+    <!-- div is the generic container for flow content. It is displayed block by default -->
+    <div>
+      <!-- Adding images 
+        We can use the img tag to add images to out html document
+        there are two required attributes of an img tag
+            
+            src: source of the image file, this could be a relative or absolute path
+            
+            lt: alternate text which describes the image. This is displayed in some browsers if the image file is not loading. Also useful for search engines and accessibility
+      -->
+      <!-- img using an absolute path -->
+      <img src="http://placekitten.com/300/300" alt="image of a kitten">
+    </div>
+    <div>
+      <!-- img using an relative path -->
+      <img src="img/kitten.jpg" alt="image of a kitten" title="Hi I am Taco!">
+    </div>
+</body>
+
+</html>
